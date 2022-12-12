@@ -9,7 +9,7 @@ const fileName = [""];
 function imagePathArray(imageType, numberOfImages) {
   let array = [];
   for (let i = 0; i < numberOfImages; i++) {
-    array.push(`/png/${imageType}s/${i + 1}-${imageType}.png`);
+    array.push(`./png/${imageType}s/${i + 1}-${imageType}.png`);
   }
   return array;
 }

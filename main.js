@@ -33,6 +33,7 @@ function generateImageContainer(fieldArray, frameArray, skyArray) {
   container.appendChild(frame);
   container.appendChild(field);
   container.appendChild(sky);
+  setCaption(frame);
   return container;
 }
 
@@ -94,3 +95,17 @@ var pngTitles =
 console.log(pngTitles);
 
 document.querySelector(".title").textContent = pngTitles;
+
+function setCaption(imgFrame) {
+  setTimeout(function () {
+    const caption = document.querySelector(".title");
+    const imgbounds = imgFrame.getBoundingClientRect();
+    const captionPosition = {
+      top: imgbounds.bottom,
+      left: imgbounds.right,
+    };
+    caption.style.top = `${captionPosition.top}px`;
+    caption.style.left = `${captionPosition.left}px`;
+    caption.style.opacity = 1;
+  }, 1500);
+}

@@ -21,9 +21,13 @@ body {
   height: 90vh;
   width: 90vw;
   margin: 0 auto;
-  margin-top: 10vh;
   display: flex;
   flex-flow: row wrap;
+  align-content: center;
+}
+
+.mainPng.gallery {
+  align-content: initial;
 }
 
 .mainPng.gallery .pngs {
@@ -86,13 +90,58 @@ img {
 }
 
 .title {
-  position: relative;
+  position: fixed;
   height: max-content;
-  width: inherit;
+  top: inherit;
+  left: 82%;
+  transform: translate(0%, -100%);
+  width: 15%;
+  opacity: 0;
   display: grid;
   place-content: center;
+  word-break: break-word;
+  font-size: 0.7em;
+  transition: opacity 300ms ease-in;
+  padding-left: 2rem;
 }
 
 .about {
   display: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  /* body {
+    background-color: gray;
+  } */
+  /* .mainPng {
+    width: 60vmin;
+  } */
+
+  img {
+    /* position: absolute; */
+    /* height: inherit; */
+    width: 90vmin;
+  }
+
+  .title {
+    position: initial;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 90vmin;
+    display: grid;
+    place-content: center;
+    font-size: 1em;
+    text-align: center;
+    word-break: normal;
+    margin: 0 auto;
+    padding-left: 0rem;
+  }
+
+  .mainPng.gallery .pngs {
+    width: 80vmin;
+    padding-top: 20px;
+    padding: 20px;
+    pointer-events: none;
+  }
 }

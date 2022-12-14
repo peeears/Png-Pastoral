@@ -172,7 +172,7 @@ img {
   }
 
   .mainPng.gallery {
-    padding-left: 20px;
+    padding-left: 25px;
   }
 
   .mainPng.gallery .pngs {
@@ -191,5 +191,6 @@ img {
     width: 100%;
     left: 0;
     top: 0;
+    z-index: 100;
   }
 }

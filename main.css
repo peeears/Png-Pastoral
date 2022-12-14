@@ -124,17 +124,15 @@ img {
 
 .intro {
   display: none;
-
   /* position: absolute; */
   position: relative;
   width: 375px;
-  transition: opacity 300ms ease-in;
   z-index: 100;
   padding-top: 5px;
 }
 
 .intro p {
-  font-size: 1.9vmin;
+  font-size: 1.85vmin;
   hyphens: manual;
   margin: 0;
   padding-top: 0.7vmin;
@@ -199,7 +197,7 @@ img {
 
   .intro {
     display: none;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     /* position: absolute; */
     /* position: relative; */
     width: 100%;
@@ -207,11 +205,23 @@ img {
     top: 0;
     z-index: 100;
   }
+
+  .intro p {
+    font-size: 1rem;
+    hyphens: manual;
+    margin: 0;
+    padding-top: 0.8vmin;
+    line-height: 1.15;
+  }
+
+  .intro p + p {
+    text-indent: 1.3rem;
+  }
 }
 
 @media only screen and (min-width: 786px) and (max-width: 1024px) {
-  .intro {
-    /* background: pink; */
-    font-size: 1.5vmin;
+  .intro p {
+    /* background-color: pink; */
+    font-size: 1.8vmin;
   }
 }

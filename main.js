@@ -193,7 +193,7 @@ function hideIntro() {
 }
 
 function blurBg() {
-  putPng.style.filter = "blur(1.5rem)";
+  putPng.style.filter = "blur(1.3rem)";
 }
 
 function showBg() {

@@ -151,6 +151,7 @@ function setCaption(imgFrame) {
 
 let aboutBtn = document.querySelector(".about");
 let intro = document.querySelector(".intro");
+let putPng = document.querySelector(".mainPng");
 let titleAll = document.querySelectorAll(".title");
 let introOff = true;
 
@@ -166,8 +167,10 @@ if (vw > 600) {
   aboutBtn.addEventListener("click", () => {
     if (introOff) {
       showIntro();
+      blurBg();
     } else {
       hideIntro();
+      showBg();
     }
   });
 }
@@ -187,4 +190,12 @@ function hideIntro() {
     title.style.display = "grid";
   }
   introOff = true;
+}
+
+function blurBg() {
+  putPng.style.filter = "blur(1.5rem)";
+}
+
+function showBg() {
+  putPng.style.filter = "blur(0)";
 }

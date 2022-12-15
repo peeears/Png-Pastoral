@@ -180,8 +180,10 @@ img {
   }
 
   .mainPng {
+    width: 100%;
+    height: 100%;
     z-index: -1;
-    padding-left: 0;
+    margin-left: 5%;
   }
 
   .mainPng.gallery {

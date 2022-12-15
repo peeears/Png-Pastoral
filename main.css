@@ -184,6 +184,7 @@ img {
     height: 100%;
     z-index: -1;
     margin-left: -5px;
+    overflow-x: hidden;
   }
 
   .mainPng.gallery {
@@ -211,7 +212,6 @@ img {
     top: 0;
     z-index: 100;
     overflow-y: auto;
-    overflow-x: hidden;
   }
 
   .intro p {
